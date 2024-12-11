@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 2. Töflur og form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+  <section class="menuBg">
+    <p>Skilaverkefni 7</p>
+    <nav>
+      <input type="checkbox" id="inputMenu">
+      <label for="inputMenu" class="labelMenu"> &#9776; </label>
+      <div class="topmenu">
+        <a href="index.html">Forsíða</a>
+        <a href="next.html">Næsta námskeið</a>
+        <a href="register.html">Skrá á námskeið</a>
+        <a href="about.html">Um okkur</a>
+      </div>
+    </nav>
+  </section>
+  <header class="col-2 container">
+      <section>
+        <img src="images/peoplednd.webp" class="logo">
+      </section>
+      <section>
+       
+      </section>
+  </header>
+  <!--banner-->
+  <div class="bannerBg">
+    <br>
+  </div><!--bg end-->
+  <br>
+  <main>
+    <section class="col-2" id="harmon">
+
+      <section>
+        <form action="takk.html" method="get"><!--method á að vera POST -->
+          <fieldset>
+            <legend>Skráningarform</legend>
+            <section class="col-2">
+              <p>
+                <label>First name</label><br>
+                <input type="text" name="first_name" required placeholder="fornafn">
+              </p>
+              <p>
+                  <label>Last name</label><br>
+                  <input type="text" name="last_name" required placeholder="eftirnafn">
+              </p>
+            </section>
+
+            <p>
+                
+              <section>
+                <label>Gender: </label>
+                <label>
+                  <input type="radio" name="gender" value="Male"> Male |
+                </label> 
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female |
+                </label> 
+                <label>
+                    <input type="radio" name="gender" value="other-none-na"> Bi
+                </label>
+            </section>
+          </p>
+          
+          <section class="col-2">
+            <p>
+              <label>Email</label><br>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Phone number</label> <br>
+                <input type="tel" 
+                  name="phone" 
+                  required 
+                  placeholder="7 digits only" 
+                  pattern="\d{3}(?:[\-\s]?)\d{4}">
+            </p>
+            </section>
+            <section class="col-2">
+              <p>
+                  <label>Time</label> <br>
+                  <input type="time" name="Tími">
+              </p>
+              <p>
+                  <label>Date</label> <br>
+                  <input type="date" name="dagsetning">
+              </p>
+            </section>
+            <section class="col-2">
+              <p>
+                <label>Race</label> <br>
+                <select name="Race">
+                  <option value="Human" class="Human">Human</option>
+                  <option value="Tiefling" class="Tiefling">Tiefling</option>
+                  <option value="Elf" class="Elf">Elf</option>
+                  <option value="HalfElf" class="HalfElf">Half elf</option>
+                  <option value="HalfOrc" class="HalfOrc">Half orc</option>                     
+                  <option value="Dragonborn" class="Dragonborn">Dragonborn</option>
+                  <option value="Halfling" class="Halfling">Halfling</option>
+                  <option value="Gnome" class="Gnome">Gnome</option>
+                  <option value="Dwarf" class="Dwarf">Dwarf</option>
+                  <option value="Drow" class="Drow">Drow/dark elves</option>                    
+                  <option value="Githyanki" class="Githyanki">Githyanki</option>
+                  <option value="Loxodon" class="Loxodon">Loxodon</option>
+                  <option value="Tabaxi" class="Tabaxi">Tabaxi</option>
+                  <option value="Warforged" class="Warforged">Warforged</option>
+                </select>
+            </p>
+              <p>
+                  <label>Class</label> <br>
+                  <select name="Class">
+                    <option value="Barbarian" class="Barbarian">
+                      <span>Barbarian</span>
+                    </option>
+                    <option value="Ranger" class="Ranger">Ranger</option>
+                    <option value="Rouge" class="Rouge">Rouge</option>
+                    <option value="Druid" class="Druid">Druid</option>
+                    <option value="Wizard" class="Wizard">Wizard</option>                     
+                    <option value="Sorcerer" class="Sorcerer">Sorcerer</option>
+                    <option value="Warlock" class="Warlock">Warlock</option>
+                    <option value="Bard" class="Bard">Bard</option>
+                    <option value="Monk" class="Monk">Monk</option>
+                    <option value="fighter" class="Fighter">Fighter</option>                    
+                    <option value="Cleric" class="Cleric">Cleric</option>
+                    <option value="Paladin" class="Paladin">Paladin</option>
+                  </select>
+              </p>
+            </section>
+            <p>
+                <label>Fleiri upplýsingar um persónuna sem þú ætlar að spila (ekki nauðsynlegt, nema kannski Nafn!)</label><br>
+                <textarea rows="5"></textarea>
+            </p>
+
+            <p>
+                <button>Skrá mig</button>
+
+            </p>
+          </fieldset>
+        </form>
+      
+      </section>
+    </section>
+  </main>
+
+    <p class="center">&copy SHJ. 2024, 2 spönn, haust 2024.</p>
+
+  <!--pop up login form-->
+  <div id="login" class="overlay">
+    <div class="popup">
+        <h2>Velkomin/n</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <form action="takk.html" method="get">
+              <fieldset>
+                <legend>Innskráning</legend>
+                <p>Notendanafn: <input type="text" name="user" required placeholder="User"></p>
+                <p>Lykilorð: <input type="password" name="psw" required placeholder="Password"></p>
+                <p><input type="submit" value="Innskráning"></p>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+  </div>
+  <!--Spjallbox-->
+  <label for="inputcheck" class="chatbutt"> ? </label>
+  <input type="checkbox" id="inputcheck">
+  <section class="chatbox">
+    <form action="takk.html" method="get"> 
+      <fieldset> 
+        <legend>&nbsp;Spjallbox&nbsp;</legend><!--ath-->
+        <label>Nafn:</label>
+        <input type="text" placeholder="Name" name="Nafn" required>
+        <br><label>Tölvupóstur:</label>
+        <input type="email" name="TP" placeholder="Email" required>
+        <br><label>Skilaboð:</label>
+        <textarea rows='5' name="skilaboð" placeholder="Message" required></textarea>
+        <p><input type="submit" value="Senda" class="button-primary"></p>
+      </fieldset>
+      </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 2. Töflur og form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+  <section class="menuBg">
+    <p>Skilaverkefni 7</p>
+    <nav>
+      <input type="checkbox" id="inputMenu">
+      <label for="inputMenu" class="labelMenu"> &#9776; </label>
+      <div class="topmenu">
+        <a href="index.html">Forsíða</a>
+        <a href="next.html">Næsta námskeið</a>
+        <a href="register.html">Skrá á námskeið</a>
+        <a href="about.html">Um okkur</a>
+      </div>
+    </nav>
+  </section>
+  <!--banner-->
+  <div class="bannerBg">
+    <section class="container">
+      <table class="autoflow">
+        <caption>Næstu námskeið</caption>
+        <thead>
+            <tr>
+                <th style="width:25%">Ævintýri</th>
+                <th style="width:55%">Hvar</th>
+                <th style="width:10%">Hvenar</th>
+                <th style="width:10%">Skráning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="WHO ">Curse of strahd</td>
+                <td data-label="WHERE ">Fálkahraun 16</td>
+                <td data-label="WHEN ">13:00 - 20:00</td>
+                <td data-label="Check In" id="checkin">
+                  <a href="register.html">Skrá á námskeið</a>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Ravenloft</td>
+              <td data-label="WHERE ">Andahraun 17</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <a href="register.html">Skrá á námskeið</a>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Riptide</td>
+              <td data-label="WHERE ">Álfaskeið 123</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <a href="register.html">Skrá á námskeið</a>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Voc Machina</td>
+              <td data-label="WHERE ">Svanahraun 100</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <a href="register.html">Skrá á námskeið</a>
+                </td>
+            </tr>
+            <tr>
+              <td data-label="WHO ">Fools gold</td>
+              <td data-label="WHERE ">Snjó tittlingastaðir 420</td>
+              <td data-label="WHEN ">13:00 - 20:00</td>
+              <td data-label="Check In ">
+                  <a href="register.html">Skrá á námskeið</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <th colspan="4">Mælt með er að koma með eigins teninga en það er hægt að fá lánað!</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section><!--container end-->
+    <br>
+  </div><!--bg end-->
+  <br>
+  <main>
+    <section class="col-2" id="harmon">
+    </section>
+  </main>
+  <footer class="col-3">
+
+  </footer>
+    <p class="center">&copy SHJ. 2024, 2 spönn, haust 2024.</p>
+
+  <!--pop up login form-->
+  <div id="login" class="overlay">
+    <div class="popup">
+        <h2>Velkomin/n</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <form action="takk.html" method="get">
+              <fieldset>
+                <legend>Innskráning</legend>
+                <p>Notendanafn: <input type="text" name="user" required placeholder="User"></p>
+                <p>Lykilorð: <input type="password" name="psw" required placeholder="Password"></p>
+                <p><input type="submit" value="Innskráning"></p>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+  </div>
+  <!--Spjallbox-->
+  <label for="inputcheck" class="chatbutt"> ? </label>
+  <input type="checkbox" id="inputcheck">
+  <section class="chatbox">
+    <form action="takk.html" method="get"> 
+      <fieldset> 
+        <legend>&nbsp;Spjallbox&nbsp;</legend><!--ath-->
+        <label>Nafn:</label>
+        <input type="text" placeholder="Name" name="Nafn" required>
+        <br><label>Tölvupóstur:</label>
+        <input type="email" name="TP" placeholder="Email" required>
+        <br><label>Skilaboð:</label>
+        <textarea rows='5' name="skilaboð" placeholder="Message" required></textarea>
+        <p><input type="submit" value="Senda" class="button-primary"></p>
+      </fieldset>
+      </form>
+  </section>
+</body>
+</html>

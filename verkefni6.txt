@@ -1,0 +1,24 @@
+Hugmyndavinna verkefni 6
+
+Dungeons and dragons námskeið fyrir byrjendur á einu kvöldi
+Síða til að selja Warhammer 40k fígúrur sem ég er búinn að setja saman og mála
+Einkakennsla í að mála Warhammer 40k eða D&D fígúrur
+
+ég ætla að búa til síðu um Dungeons and dragons námskeið fyrir byrjendur á einu kvöldi
+
+Efni fyrir síðuna
+
+"How to play Dungeons & Dragons" video: https://www.bing.com/videos/riverview/relatedvideo?q=dungeons+and+dragons&mid=FE17104166BDFDEE99FAFE17104166BDFDEE99FA&FORM=VIRE
+Official síðan fyrir D&D: https://www.dndbeyond.com/
+Mismunandi classes af characters til að spila: https://www.dndbeyond.com/classes
+D&D Wikipedia síðan: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
+Íslenskar reglur fyrir D&D og líka um characters: https://d20.is/
+D&D spilareglur: https://5e.d20srd.org/
+
+Site Map
+
+Forsíða - segir hvað D&D er og hvernig námskeiðið verður
+|_ Næsta námskeið - hvaða dag og klukkan hvað og hvar, líka hvaða campaign verður spilað og hver er game master
+|_ Skrá á námskið - maður skráir sig her á næsta námskeið með nafn, tölvupóst og símanúmer
+|_ Um okkur - afhverjur við gerum þetta og hver við erum og hvernig characters við spilum
+
